@@ -1,0 +1,533 @@
+
+
+Wed Aug 21 17:09:17 2019
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Darwin, kernel 18.2.0 (Darwin Kernel Version 18.2.0: Fri Oct  5 19:41:49 PDT 2018; root:xnu-4903.2
+Compiler: GCC 4.2
+Compilation date: 2018-08-20T21:49:13
+ext2fs lib: none, ntfs lib: none, reiserfs lib: none, ewf lib: none, curses lib: ncurses 5.7
+Hard disk list
+Disk /dev/disk2 - 24 MB / 23 MiB - 47504 sectors (RO), sector size=512
+Disk /dev/disk3 - 3000 GB / 2794 GiB - 732566646 sectors, sector size=4096
+Disk /dev/rdisk2 - 24 MB / 23 MiB - 47504 sectors (RO), sector size=512
+Disk /dev/rdisk3 - 3000 GB / 2794 GiB - 732566646 sectors, sector size=4096
+
+Partition table type (auto): EFI GPT
+Disk /dev/disk3 - 3000 GB / 2794 GiB
+Partition table type: EFI GPT
+
+Analyse Disk /dev/disk3 - 3000 GB / 2794 GiB - 732566646 sectors
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=732566645 (expected 732566645)
+hdr_lba_start=6
+hdr_lba_end=732566640
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+Current partition structure:
+ 1 P EFI System                     6      76805      76800 [EFI System Partition]
+ 2 P Mac HFS                    76806  732533872  732457067
+
+search_part()
+Disk /dev/disk3 - 3000 GB / 2794 GiB - 732566646 sectors
+FAT32 at 6/0/1
+check_FAT: Unusual media descriptor (0xf0!=0xf8)
+FAT1 : 32-106
+FAT2 : 107-181
+start_rootdir : 182 root cluster : 2
+Data : 182-76799
+sectors : 76800
+cluster_size : 1
+no_of_cluster : 76618 (2 - 76619)
+fat_length 75 calculated 75
+heads/cylinder 16 (FAT) != 1 (HD)
+sect/track 32 (FAT) != 1 (HD)
+
+FAT32 at 6/0/1
+     EFI System                     6      76805      76800 [EFI]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+
+HFS+ magic value at 76806/0/1
+part_size 732457066
+     Mac HFS                    76806  732533871  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+Results
+   P EFI System                     6      76805      76800 [EFI]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+   P Mac HFS                    76806  732533871  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+interface_write()
+ 1 P EFI System                     6      76805      76800 [EFI]
+ 2 P Mac HFS                    76806  732533871  732457066
+
+search_part()
+Disk /dev/disk3 - 3000 GB / 2794 GiB - 732566646 sectors
+FAT32 at 6/0/1
+check_FAT: Unusual media descriptor (0xf0!=0xf8)
+FAT1 : 32-106
+FAT2 : 107-181
+start_rootdir : 182 root cluster : 2
+Data : 182-76799
+sectors : 76800
+cluster_size : 1
+no_of_cluster : 76618 (2 - 76619)
+fat_length 75 calculated 75
+heads/cylinder 16 (FAT) != 1 (HD)
+sect/track 32 (FAT) != 1 (HD)
+
+FAT32 at 6/0/1
+     EFI System                     6      76805      76800 [EFI]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+FAT32 at 12/0/1
+check_FAT: Unusual media descriptor (0xf0!=0xf8)
+FAT1 : 32-106
+FAT2 : 107-181
+start_rootdir : 182 root cluster : 2
+Data : 182-76799
+sectors : 76800
+cluster_size : 1
+no_of_cluster : 76618 (2 - 76619)
+fat_length 75 calculated 75
+FAT differs, FAT sectors=64-75/75
+heads/cylinder 16 (FAT) != 1 (HD)
+sect/track 32 (FAT) != 1 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 12/0/1
+     EFI System                    12      76811      76800 [EFI]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+
+HFS+ magic value at 76806/0/1
+part_size 732457066
+     Mac HFS                    76806  732533871  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 87996/0/1
+part_size 732457066
+     Mac HFS                    87996  732545061  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88006/0/1
+part_size 732457066
+     Mac HFS                    88006  732545071  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88026/0/1
+part_size 732457066
+     Mac HFS                    88026  732545091  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88032/0/1
+part_size 732457066
+     Mac HFS                    88032  732545097  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88040/0/1
+part_size 732457066
+     Mac HFS                    88040  732545105  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88054/0/1
+part_size 732457066
+     Mac HFS                    88054  732545119  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88080/0/1
+part_size 732457066
+     Mac HFS                    88080  732545145  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88094/0/1
+part_size 732457066
+     Mac HFS                    88094  732545159  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88113/0/1
+part_size 732457066
+     Mac HFS                    88113  732545178  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88123/0/1
+part_size 732457066
+     Mac HFS                    88123  732545188  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88135/0/1
+part_size 732457066
+     Mac HFS                    88135  732545200  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88145/0/1
+part_size 732457066
+     Mac HFS                    88145  732545210  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88157/0/1
+part_size 732457066
+     Mac HFS                    88157  732545222  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88173/0/1
+part_size 732457066
+     Mac HFS                    88173  732545238  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88193/0/1
+part_size 732457066
+     Mac HFS                    88193  732545258  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88215/0/1
+part_size 732457066
+     Mac HFS                    88215  732545280  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88229/0/1
+part_size 732457066
+     Mac HFS                    88229  732545294  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88246/0/1
+part_size 732457066
+     Mac HFS                    88246  732545311  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88272/0/1
+part_size 732457066
+     Mac HFS                    88272  732545337  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88294/0/1
+part_size 732457066
+     Mac HFS                    88294  732545359  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88306/0/1
+part_size 732457066
+     Mac HFS                    88306  732545371  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88318/0/1
+part_size 732457066
+     Mac HFS                    88318  732545383  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88334/0/1
+part_size 732457066
+     Mac HFS                    88334  732545399  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88348/0/1
+part_size 732457066
+     Mac HFS                    88348  732545413  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88368/0/1
+part_size 732457066
+     Mac HFS                    88368  732545433  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88382/0/1
+part_size 732457066
+     Mac HFS                    88382  732545447  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88396/0/1
+part_size 732457066
+     Mac HFS                    88396  732545461  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88413/0/1
+part_size 732457066
+     Mac HFS                    88413  732545478  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88429/0/1
+part_size 732457066
+     Mac HFS                    88429  732545494  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88441/0/1
+part_size 732457066
+     Mac HFS                    88441  732545506  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88459/0/1
+part_size 732457066
+     Mac HFS                    88459  732545524  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88476/0/1
+part_size 732457066
+     Mac HFS                    88476  732545541  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88496/0/1
+part_size 732457066
+     Mac HFS                    88496  732545561  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88513/0/1
+part_size 732457066
+     Mac HFS                    88513  732545578  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88539/0/1
+part_size 732457066
+     Mac HFS                    88539  732545604  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88560/0/1
+part_size 732457066
+     Mac HFS                    88560  732545625  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88578/0/1
+part_size 732457066
+     Mac HFS                    88578  732545643  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88606/0/1
+part_size 732457066
+     Mac HFS                    88606  732545671  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88620/0/1
+part_size 732457066
+     Mac HFS                    88620  732545685  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88640/0/1
+part_size 732457066
+     Mac HFS                    88640  732545705  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88668/0/1
+part_size 732457066
+     Mac HFS                    88668  732545733  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88686/0/1
+part_size 732457066
+     Mac HFS                    88686  732545751  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88707/0/1
+part_size 732457066
+     Mac HFS                    88707  732545772  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88723/0/1
+part_size 732457066
+     Mac HFS                    88723  732545788  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88735/0/1
+part_size 732457066
+     Mac HFS                    88735  732545800  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88751/0/1
+part_size 732457066
+     Mac HFS                    88751  732545816  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88778/0/1
+part_size 732457066
+     Mac HFS                    88778  732545843  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88794/0/1
+part_size 732457066
+     Mac HFS                    88794  732545859  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88812/0/1
+part_size 732457066
+     Mac HFS                    88812  732545877  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88828/0/1
+part_size 732457066
+     Mac HFS                    88828  732545893  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88842/0/1
+part_size 732457066
+     Mac HFS                    88842  732545907  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88846/0/1
+part_size 732457066
+     Mac HFS                    88846  732545911  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88872/0/1
+part_size 732457066
+     Mac HFS                    88872  732545937  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88884/0/1
+part_size 732457066
+     Mac HFS                    88884  732545949  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88896/0/1
+part_size 732457066
+     Mac HFS                    88896  732545961  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88921/0/1
+part_size 732457066
+     Mac HFS                    88921  732545986  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88935/0/1
+part_size 732457066
+     Mac HFS                    88935  732546000  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88952/0/1
+part_size 732457066
+     Mac HFS                    88952  732546017  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+
+HFS+ magic value at 88970/0/1
+part_size 732457066
+     Mac HFS                    88970  732546035  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+Search for partition aborted
+
+Results
+     EFI System                     6      76805      76800 [EFI]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+     EFI System                    12      76811      76800 [EFI]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+     Mac HFS                    76806  732533871  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    87996  732545061  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88006  732545071  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88026  732545091  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88032  732545097  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88040  732545105  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88054  732545119  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88080  732545145  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88094  732545159  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88113  732545178  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88123  732545188  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88135  732545200  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88145  732545210  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88157  732545222  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88173  732545238  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88193  732545258  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88215  732545280  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88229  732545294  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88246  732545311  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88272  732545337  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88294  732545359  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88306  732545371  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88318  732545383  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88334  732545399  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88348  732545413  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88368  732545433  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88382  732545447  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88396  732545461  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88413  732545478  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88429  732545494  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88441  732545506  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88459  732545524  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88476  732545541  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88496  732545561  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88513  732545578  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88539  732545604  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88560  732545625  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88578  732545643  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88606  732545671  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88620  732545685  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88640  732545705  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88668  732545733  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88686  732545751  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88707  732545772  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88723  732545788  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88735  732545800  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88751  732545816  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88778  732545843  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88794  732545859  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88812  732545877  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88828  732545893  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88842  732545907  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88846  732545911  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88872  732545937  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88884  732545949  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88896  732545961  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88921  732545986  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88935  732546000  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88952  732546017  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+     Mac HFS                    88970  732546035  732457066
+     HFS+ blocksize=8192, 3000 GB / 2794 GiB
+SIGINT detected! TestDisk has been killed.
